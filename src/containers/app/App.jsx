@@ -1,11 +1,12 @@
 import React from 'react';
-import Background from './Background';
+import Background from '../background/Background';
 import * as Styled from './App.styled';
+import Layout from '../layout/Layout';
 
 function App() {
   return <>
       <Styled.GlobalStyle />
-      <Background>Hello world</Background>
+      <Background><Layout></Layout></Background>
     </>
 }
 
