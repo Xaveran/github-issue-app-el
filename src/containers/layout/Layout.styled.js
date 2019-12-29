@@ -13,7 +13,7 @@ const centerLayoutCss = css`
   background-color: white;
   margin-top: -${heightInEm / 2}em;
   margin-left: -${widthInEm / 2}em;
-`
+`;
 
 const gridCss = css`
   display: grid;

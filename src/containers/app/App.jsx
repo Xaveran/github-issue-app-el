@@ -4,10 +4,14 @@ import * as Styled from './App.styled';
 import Layout from '../layout/Layout';
 
 function App() {
-  return <>
+  return (
+    <>
       <Styled.GlobalStyle />
-      <Background><Layout></Layout></Background>
+      <Background>
+        <Layout></Layout>
+      </Background>
     </>
+  );
 }
 
 export default App;

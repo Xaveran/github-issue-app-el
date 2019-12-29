@@ -1,4 +1,4 @@
- const webpack = require('webpack');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.jsx',
@@ -7,34 +7,32 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: ['babel-loader'],
       },
       {
-          test: /\.(png|jpg|gif|svg)$/i,
-          use: [
-              {
-                  loader: 'url-loader',
-                  options: {
-                      limit: 10000,
-                  },
-              },
-          ],
+        test: /\.(png|jpg|gif|svg)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+            },
+          },
+        ],
       },
-    ]
+    ],
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['*', '.js', '.jsx'],
   },
   output: {
     path: __dirname + '/dist',
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
   devServer: {
     contentBase: './dist',
-    hot: true
-  }
+    hot: true,
+  },
 };
