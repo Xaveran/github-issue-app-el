@@ -1,9 +1,10 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const widthInEm = 40;
 const heightInEm = 40;
+const borderRadius = '1em';
 
-export const Layout = styled.div`
+const centerLayoutCss = css`
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12,4 +13,43 @@ export const Layout = styled.div`
   background-color: white;
   margin-top: -${heightInEm / 2}em;
   margin-left: -${widthInEm / 2}em;
+`
+
+const gridCss = css`
+  display: grid;
+  grid-template-columns: [sidebar] 1fr [issues] 4fr;
+  background-color: red;
+`;
+
+export const Layout = styled.div`
+  ${centerLayoutCss}
+  ${gridCss}
+  border-radius: ${borderRadius};
+`;
+
+export const Sidebar = styled.div`
+  display: grid;
+  grid-template-rows: [system] 1fr [navigation] 8fr;
+  background-color: yellow;
+  border-bottom-left-radius: ${borderRadius};
+  border-top-left-radius: ${borderRadius};
+`;
+
+export const Issues = styled.div`
+  display: grid;
+  background-color: green;
+  border-top-right-radius: ${borderRadius};
+  border-bottom-right-radius: ${borderRadius};
+`;
+
+export const System = styled.div`
+  display: grid;
+  background-color: purple;
+  border-top-left-radius: ${borderRadius};
+`;
+
+export const Navigation = styled.div`
+  display: grid;
+  background-color: blue;
+  border-bottom-left-radius: ${borderRadius};
 `;
