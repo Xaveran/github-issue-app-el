@@ -4,4 +4,4 @@ import iconGithub from '../../../assets/icon-github.svg';
 
 export default { title: 'NavigationTab' };
 
-export const AllNavigationTab = () => <NavigationTab text="All" count="12" icon={iconGithub} />
+export const AllNavigationTab = () => <div style={{ backgroundColor: '#B695C0' }}><NavigationTab text="All" count={12} icon={iconGithub} /></div>
