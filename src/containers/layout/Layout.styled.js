@@ -6,7 +6,7 @@ const borderRadius = '1em';
 
 const centerLayoutCss = css`
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 50%;
   width: ${widthInEm}em;
   height: ${heightInEm}em;
@@ -25,6 +25,7 @@ export const Layout = styled.div`
   ${centerLayoutCss}
   ${gridCss}
   border-radius: ${borderRadius};
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 `;
 
 export const Sidebar = styled.div`
