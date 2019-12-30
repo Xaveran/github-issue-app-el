@@ -1,24 +1,22 @@
 import styled, { css } from 'styled-components';
 
-const widthInEm = 40;
-const heightInEm = 40;
-const borderRadius = '1em';
+const widthInPx = 650;
+const heightInPx = 500;
+export const borderRadius = '10px';
 
 const centerLayoutCss = css`
   position: absolute;
-  top: 49%;
-  left: 50%;
-  width: ${widthInEm}em;
-  height: ${heightInEm}em;
-  background-color: white;
-  margin-top: -${heightInEm / 2}em;
-  margin-left: -${widthInEm / 2}em;
+  top: 50vh;
+  left: 50vw;
+  width: ${widthInPx}px;
+  height: ${heightInPx}px;
+  margin-top: -${heightInPx / 2}px;
+  margin-left: -${widthInPx / 2}px;
 `;
 
 const gridCss = css`
   display: grid;
-  grid-template-columns: [sidebar] 1fr [issues] 4fr;
-  background-color: red;
+  grid-template-columns: [sidebar] 150px [issues] 500px;
 `;
 
 export const Layout = styled.div`
@@ -30,27 +28,26 @@ export const Layout = styled.div`
 
 export const Sidebar = styled.div`
   display: grid;
-  grid-template-rows: [system] 1fr [navigation] 8fr;
-  background-color: yellow;
+  grid-template-rows: [system] 40px [navigation] 460px;
   border-bottom-left-radius: ${borderRadius};
   border-top-left-radius: ${borderRadius};
 `;
 
-export const Issues = styled.div`
-  display: grid;
-  background-color: green;
-  border-top-right-radius: ${borderRadius};
-  border-bottom-right-radius: ${borderRadius};
-`;
-
 export const System = styled.div`
   display: grid;
-  background-color: purple;
+  background-color: rgb(24, 24, 39);
   border-top-left-radius: ${borderRadius};
 `;
 
 export const Navigation = styled.div`
+  &::before {
+    content: 'navigation-blur';
+    background-image: inherit;
+    background-position: inherit;
+    filter: blur(6px);
+  }
+
   display: grid;
-  background-color: blue;
+  background-color: rgb(24, 24, 39);
   border-bottom-left-radius: ${borderRadius};
 `;

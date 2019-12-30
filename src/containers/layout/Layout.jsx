@@ -1,4 +1,5 @@
 import React from 'react';
+import Issues from '../issues/Issues';
 import * as Styled from './Layout.styled';
 
 function Layout() {
@@ -8,7 +9,7 @@ function Layout() {
         <Styled.System />
         <Styled.Navigation />
       </Styled.Sidebar>
-      <Styled.Issues />
+      <Issues />
     </Styled.Layout>
   );
 }
