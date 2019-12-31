@@ -33,12 +33,6 @@ export const Sidebar = styled.div`
   border-top-left-radius: ${borderRadius};
 `;
 
-export const System = styled.div`
-  display: grid;
-  background-color: rgb(24, 24, 39);
-  border-top-left-radius: ${borderRadius};
-`;
-
 export const Navigation = styled.div`
   &::before {
     content: 'navigation-blur';
