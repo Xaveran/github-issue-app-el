@@ -28,20 +28,7 @@ export const Layout = styled.div`
 
 export const Sidebar = styled.div`
   display: grid;
-  grid-template-rows: [system] 40px [navigation] 460px;
+  grid-template-rows: [system] 40px [filters] 460px;
   border-bottom-left-radius: ${borderRadius};
   border-top-left-radius: ${borderRadius};
-`;
-
-export const Navigation = styled.div`
-  &::before {
-    content: 'navigation-blur';
-    background-image: inherit;
-    background-position: inherit;
-    filter: blur(6px);
-  }
-
-  display: grid;
-  background-color: rgb(24, 24, 39);
-  border-bottom-left-radius: ${borderRadius};
 `;

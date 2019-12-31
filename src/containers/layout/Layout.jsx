@@ -1,6 +1,7 @@
 import React from 'react';
 import Issues from '../issues/Issues';
 import System from '../system/System';
+import Filters from '../filters/Filters';
 import * as Styled from './Layout.styled';
 
 function Layout() {
@@ -8,7 +9,7 @@ function Layout() {
     <Styled.Layout>
       <Styled.Sidebar>
         <System />
-        <Styled.Navigation />
+        <Filters />
       </Styled.Sidebar>
       <Issues />
     </Styled.Layout>

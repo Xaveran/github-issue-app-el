@@ -10,6 +10,7 @@ export const Issues = styled.div`
   background-color: ${colors.blackhaze};
   border-top-right-radius: ${borderRadius};
   border-bottom-right-radius: ${borderRadius};
+  overflow-x: auto;
 `;
 
 export const Issue = styled.div`
