@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import colors from '../../utils/colors';
 import { borderRadius } from '../layout/Layout.styled';
 
 import Icon from '../../../assets/icon-star.svg';
@@ -6,7 +7,7 @@ import Icon from '../../../assets/icon-star.svg';
 export const Issues = styled.div`
   display: grid;
   padding: 10px;
-  background-color: rgb(246, 246, 246);
+  background-color: ${colors.blackhaze};
   border-top-right-radius: ${borderRadius};
   border-bottom-right-radius: ${borderRadius};
 `;
@@ -16,7 +17,7 @@ export const Issue = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  border: 1px solid rgb(229, 229, 229);
+  border: 1px solid ${colors.mercury};
   margin: 5px;
   border-radius: 5px;
   height: 40px;

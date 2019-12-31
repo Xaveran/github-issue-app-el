@@ -1,13 +1,14 @@
 import React from 'react';
 import * as Styled from './System.styled';
+import colors from '../../utils/colors';
 import CircleIcon from '../../components/circleIcon/CircleIcon';
 
 function System() {
   return (
     <Styled.System>
-      <CircleIcon color="rgb(255, 87, 85)" />
-      <CircleIcon color="rgb(255, 186, 51)" />
-      <CircleIcon color="rgb(0, 201, 75)" />
+      <CircleIcon color={colors.carnation} />
+      <CircleIcon color={colors.mysin} />
+      <CircleIcon color={colors.malachite} />
     </Styled.System>
   );
 }

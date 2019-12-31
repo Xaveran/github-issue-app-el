@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import colors from '../../utils/colors';
 import { borderRadius } from '../layout/Layout.styled';
 
 export const System = styled.div`
@@ -6,7 +7,7 @@ export const System = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding-left: 5px;
-  background-color: rgb(24, 24, 39);
+  background-color: ${colors.mirage};
   border-top-left-radius: ${borderRadius};
 
   > * {
