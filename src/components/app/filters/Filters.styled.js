@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import colors from '../../utils/colors';
-import Icon from '../../components/icon/Icon';
+import colors from '../../../utils/colors';
+import Icon from '../../common/icon/Icon';
 import { borderRadius } from '../layout/Layout.styled';
 
 const blur = radius => css`

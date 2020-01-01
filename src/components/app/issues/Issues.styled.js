@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import Icon from '../../components/icon/Icon';
-import colors from '../../utils/colors';
+import Icon from '../../common/icon/Icon';
+import colors from '../../../utils/colors';
 import { borderRadius } from '../layout/Layout.styled';
 
 export const Issues = styled.div`
-  display: grid;
   padding: 10px;
   background-color: ${colors.blackhaze};
   border-top-right-radius: ${borderRadius};

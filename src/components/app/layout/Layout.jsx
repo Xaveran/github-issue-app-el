@@ -3,7 +3,7 @@ import Issues from '../issues/Issues';
 import System from '../system/System';
 import Filters from '../filters/Filters';
 import * as Styled from './Layout.styled';
-import { getIssues } from '../../api/api';
+import { getIssues } from '../../../api/api';
 
 function Layout() {
   const [activeFilter, setActiveFilter] = useState('all');

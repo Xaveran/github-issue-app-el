@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import colors from '../../utils/colors';
+import colors from '../../../utils/colors';
 import { borderRadius } from '../layout/Layout.styled';
 
 export const System = styled.div`

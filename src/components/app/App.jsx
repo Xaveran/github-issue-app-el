@@ -1,7 +1,7 @@
 import React from 'react';
-import Background from '../background/Background';
+import Background from '../common/background/Background';
 import * as Styled from './App.styled';
-import Layout from '../layout/Layout';
+import Layout from './layout/Layout';
 
 function App() {
   return (

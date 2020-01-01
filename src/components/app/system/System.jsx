@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Styled from './System.styled';
-import colors from '../../utils/colors';
-import CircleIcon from '../../components/circleIcon/CircleIcon';
+import colors from '../../../utils/colors';
+import CircleIcon from '../../common/icon/CircleIcon';
 
 function System() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import * as Styled from './Issues.styled';
-import { getAll } from '../../api/api.js';
+import { getAll } from '../../../api/api.js';
 
 function Issues({ issues }) {
   return (
