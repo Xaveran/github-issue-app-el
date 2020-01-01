@@ -14,4 +14,4 @@
 
 - Run command `yarn install` to install dependencies
 - Run command `yarn start` to start project
-- Open in browser on [localhost](localhost:8080)
+- Open in browser on localhost:8080
