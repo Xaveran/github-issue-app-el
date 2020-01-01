@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import * as Styled from './Filters.styled';
 
 function Filter({ title, count, iconName, active, onClick }) {
@@ -10,5 +11,13 @@ function Filter({ title, count, iconName, active, onClick }) {
     </Styled.Filter>
   );
 }
+
+PropTypes.propTypes = {
+  title: PropTypes.string.isRequired,
+  count: PropTypes.number.isRequired,
+  iconName: PropTypes.oneOf(['github', 'open', 'closed']).isRequired,
+  active: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
 
 export default Filter;
