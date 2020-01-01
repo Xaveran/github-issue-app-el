@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Issue from './Issue';
 import * as Styled from './Issues.styled';
-import { getAll } from '../../../api/api.js';
 
 function Issues({ issues }) {
   return (
@@ -16,22 +16,6 @@ function Issues({ issues }) {
         );
       })}
     </Styled.Issues>
-  );
-}
-
-function Issue({ title, like }) {
-  return (
-    <Styled.Issue>
-      <Styled.Title>{title}</Styled.Title>
-      <StarIcon like={like} />
-    </Styled.Issue>
-  );
-}
-
-function StarIcon(props) {
-  const [like, setLike] = useState(props.like);
-  return (
-    <Styled.StarIcon like={like} onClick={() => setLike(!like)} />
   );
 }
 

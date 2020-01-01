@@ -25,8 +25,8 @@ const getClosed = () => {
   return asMap(issues.filter(issue => !issue.open));
 };
 
-function asMap(issues) {
-  return issues.reduce((acc, curr) => {
+function asMap(values) {
+  return values.reduce((acc, curr) => {
     const collection = acc[curr.date] || [];
     if (collection) {
       return { ...acc, [curr.date]: [...collection, curr] };
