@@ -3,54 +3,94 @@
     "id": 1,
     "title": "Page changes",
     "date": "19-07-2016",
-    "like": true
+    "like": true,
+    "open": true
   },
   {
     "id": 2,
     "title": "Review of last issues",
     "date": "19-07-2016",
-    "like": true
+    "like": true,
+    "open": false
   },
   {
     "id": 3,
     "title": "Visual UI Update Review",
     "date": "18-07-2016",
-    "like": false
+    "like": false,
+    "open": true
   },
   {
     "id": 4,
     "title": "Sidebar changes",
     "date": "18-07-2016",
-    "like": false
+    "like": false,
+    "open": false
   },
   {
     "id": 5,
     "title": "Crash update",
     "date": "15-07-2016",
-    "like": false
+    "like": false,
+    "open": false
   },
   {
     "id": 6,
     "title": "Page visual UI Update Review",
     "date": "15-07-2016",
-    "like": true
+    "like": true,
+    "open": false
   },
   {
     "id": 7,
     "title": "Sidebar update",
     "date": "15-07-2016",
-    "like": false
+    "like": false,
+    "open": false
   },
   {
     "id": 8,
     "title": "Crash issue",
     "date": "14-07-2016",
-    "like": true
+    "like": true,
+    "open": true
   },
   {
     "id": 9,
     "title": "Visual update & Crash resolve",
     "date": "14-07-2016",
-    "like": true
+    "like": true,
+    "open": false
+  },
+  {
+    "id": 10,
+    "title": "Button issue",
+    "date": "13-07-2016",
+    "like": false,
+    "open": true
+  },
+
+  {
+    "id": 11,
+    "title": "Create Layout",
+    "date": "13-07-2016",
+    "like": false,
+    "open": false
+  },
+
+  {
+    "id": 12,
+    "title": "Setup project",
+    "date": "13-07-2016",
+    "like": false,
+    "open": false
+  },
+
+  {
+    "id": 13,
+    "title": "Initial commit",
+    "date": "13-07-2016",
+    "like": true,
+    "open": false
   }
 ]

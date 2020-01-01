@@ -1,20 +1,11 @@
 import React, { useState } from 'react';
 import * as Styled from './Issues.styled';
-import issues from '../../api/issues.json';
+import { getAll } from '../../api/api.js';
 
-const issueMap = issues.reduce((acc, curr) => {
-  const collection = acc[curr.date] || [];
-  if (collection) {
-    return { ...acc, [curr.date]: [...collection, curr] };
-  } else {
-    return { ...acc, [curr.date]: curr };
-  }
-}, {});
-
-function Issues() {
+function Issues({ issues }) {
   return (
     <Styled.Issues>
-      {Object.entries(issueMap).map(([key, value]) => {
+      {Object.entries(issues).map(([key, value]) => {
         return (
           <div key={key}>
             <Styled.DateLabel>{key}</Styled.DateLabel>
