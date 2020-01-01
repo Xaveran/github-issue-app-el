@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import colors from '../../utils/colors';
 import { borderRadius } from '../layout/Layout.styled';
@@ -33,14 +34,18 @@ export const DateLabel = styled.time`
   position: relative;
   color: grey;
   left: 5px;
-  font-size: 14px;
+  font-size: 12px;
 `;
 
-export const StarIcon = styled(Icon)`
+// Filter props to avoid non-boolean value warning, more: https://github.com/styled-components/styled-components/issues/1198#issuecomment-425650423
+export const StarIcon = styled(({ like, ...props }) => (
+  <Icon {...props} />
+))`
   position: relative;
   right: 10px;
 
   path {
-    fill: black;
+    fill: ${props => (props.like ? 'black' : 'white')};
+    stroke: ${colors.mercury};
   }
 `;

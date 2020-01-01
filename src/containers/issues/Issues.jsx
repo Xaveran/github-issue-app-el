@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import * as Styled from './Issues.styled';
 import issues from '../../api/issues.json';
 
@@ -28,12 +28,19 @@ function Issues() {
   );
 }
 
-function Issue({ title }) {
+function Issue({ title, like }) {
   return (
     <Styled.Issue>
       <Styled.Title>{title}</Styled.Title>
-      <Styled.StarIcon />
+      <StarIcon like={like} />
     </Styled.Issue>
+  );
+}
+
+function StarIcon(props) {
+  const [like, setLike] = useState(props.like);
+  return (
+    <Styled.StarIcon like={like} onClick={() => setLike(!like)} />
   );
 }
 

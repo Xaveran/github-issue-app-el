@@ -2,46 +2,55 @@
   {
     "id": 1,
     "title": "Page changes",
-    "date": "19-07-2016"
+    "date": "19-07-2016",
+    "like": true
   },
   {
     "id": 2,
     "title": "Review of last issues",
-    "date": "19-07-2016"
+    "date": "19-07-2016",
+    "like": true
   },
   {
     "id": 3,
     "title": "Visual UI Update Review",
-    "date": "18-07-2016"
+    "date": "18-07-2016",
+    "like": false
   },
   {
     "id": 4,
     "title": "Sidebar changes",
-    "date": "18-07-2016"
+    "date": "18-07-2016",
+    "like": false
   },
   {
     "id": 5,
     "title": "Crash update",
-    "date": "15-07-2016"
+    "date": "15-07-2016",
+    "like": false
   },
   {
     "id": 6,
     "title": "Page visual UI Update Review",
-    "date": "15-07-2016"
+    "date": "15-07-2016",
+    "like": true
   },
   {
     "id": 7,
     "title": "Sidebar update",
-    "date": "15-07-2016"
+    "date": "15-07-2016",
+    "like": false
   },
   {
     "id": 8,
     "title": "Crash issue",
-    "date": "14-07-2016"
+    "date": "14-07-2016",
+    "like": true
   },
   {
     "id": 9,
     "title": "Visual update & Crash resolve",
-    "date": "14-07-2016"
+    "date": "14-07-2016",
+    "like": true
   }
 ]
