@@ -1,9 +1,9 @@
 import React from 'react';
 import * as Styled from './Filters.styled';
 
-function Filter({ title, count, iconName }) {
+function Filter({ title, count, iconName, active, onClick }) {
   return (
-    <Styled.Filter>
+    <Styled.Filter active={active} onClick={onClick}>
       <Styled.FilterIcon name={iconName} />
       <Styled.Title>{title}</Styled.Title>
       <Styled.Count>{count}</Styled.Count>

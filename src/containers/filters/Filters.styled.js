@@ -32,14 +32,22 @@ export const Filters = styled.div`
   height: 460px;
 `;
 
+const elo = 'rba(144, 147, 173)';
+
 export const Filter = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
   height: 50px;
 
+  ${props =>
+    props.active &&
+    css`
+      background-color: ${colors.ebonyClay};
+    `}
+
   &:hover {
-    background-color: rgb(44, 47, 73);
+    background-color: ${colors.ebonyClay};
   }
 `;
 
