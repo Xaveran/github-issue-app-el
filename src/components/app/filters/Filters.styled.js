@@ -35,7 +35,8 @@ export const Filters = styled.div`
 const elo = 'rba(144, 147, 173)';
 
 export const Filter = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: [icon] 30px [title] 90px [count] 30px;
   align-items: center;
   width: 100%;
   height: 50px;
@@ -52,21 +53,18 @@ export const Filter = styled.div`
 `;
 
 export const FilterIcon = styled(Icon)`
-  display: flex;
-  flex-grow: 1;
+  justify-self: end;
 `;
 
 export const Title = styled.span`
-  display: flex;
-  flex-grow: 3;
+  position: relative;
+  left: 10px;
   font-size: 15px;
   color: white;
 `;
 
 export const Count = styled.span`
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
+  justify-self: center;
   color: gray;
   font-size: 13px;
 `;
