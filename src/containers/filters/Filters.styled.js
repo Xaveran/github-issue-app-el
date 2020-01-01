@@ -1,19 +1,35 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import colors from '../../utils/colors';
 import Icon from '../../components/icon/Icon';
 import { borderRadius } from '../layout/Layout.styled';
 
-export const Filters = styled.div`
-  // &::before {
-  //   content: 'navigation-blur';
-  //   background-image: inherit;
-  //   background-position: inherit;
-  //   filter: blur(6px);
-  // }
+const blur = radius => css`
+  -webkit-filter: blur(${radius});
+  -moz-filter: blur(${radius});
+  -o-filter: blur(${radius});
+  -ms-filter: blur(${radius});
+  filter: blur(${radius});
+`;
 
+// TODO: correct background-position, when inherited blurred image is not exactly part of background image
+export const Blur = styled.div`
+  &::before {
+    content: 'navigation-blur';
+    ${blur('6px')}
+    position: absolute;
+    width: 150px;
+    height: 460px;
+  }
+`;
+
+export const Filters = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: rgb(36, 40, 56);
   border-bottom-left-radius: ${borderRadius};
+  background-color: ${colors.mirageTransparent};
+  ${blur('0px')}
+  width: 150px;
+  height: 460px;
 `;
 
 export const Filter = styled.div`

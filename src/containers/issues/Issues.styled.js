@@ -4,7 +4,6 @@ import Icon from '../../components/icon/Icon';
 import colors from '../../utils/colors';
 import { borderRadius } from '../layout/Layout.styled';
 
-
 export const Issues = styled.div`
   display: grid;
   padding: 10px;
