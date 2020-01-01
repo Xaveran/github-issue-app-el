@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import Icon from '../../components/icon/Icon';
 import colors from '../../utils/colors';
 import { borderRadius } from '../layout/Layout.styled';
 
-import Icon from '../../../assets/icon-star.svg';
 
 export const Issues = styled.div`
   display: grid;
@@ -39,7 +39,7 @@ export const DateLabel = styled.time`
 
 // Filter props to avoid non-boolean value warning, more: https://github.com/styled-components/styled-components/issues/1198#issuecomment-425650423
 export const StarIcon = styled(({ like, ...props }) => (
-  <Icon {...props} />
+  <Icon {...props} name="star" />
 ))`
   position: relative;
   right: 10px;

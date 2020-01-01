@@ -1,6 +1,6 @@
 import styled from 'styled-components';
+import Icon from '../../components/icon/Icon';
 import { borderRadius } from '../layout/Layout.styled';
-import GithubIcon from '../../../assets/icon-github.svg';
 
 export const Filters = styled.div`
   // &::before {
@@ -27,7 +27,7 @@ export const Filter = styled.div`
   }
 `;
 
-export const Icon = styled(GithubIcon)`
+export const FilterIcon = styled(Icon)`
   display: flex;
   flex-grow: 1;
 `;
