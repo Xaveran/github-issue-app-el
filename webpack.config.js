@@ -14,6 +14,10 @@ module.exports = {
         loader: 'react-svg-loader',
       },
       {
+        test: /\.ttf$/,
+        loader: 'file-loader',
+      },
+      {
         test: /\.(png|jpg|gif)$/i,
         use: [
           {
