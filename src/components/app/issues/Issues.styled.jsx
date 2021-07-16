@@ -43,7 +43,7 @@ export const StarIcon = styled(({ like, ...props }) => (
   right: 10px;
 
   path {
-    fill: ${props => (props.like ? 'black' : 'white')};
+    fill: ${(props) => (props.like ? 'black' : 'white')};
     stroke: ${colors.mercury};
   }
 `;

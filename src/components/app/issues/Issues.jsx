@@ -9,7 +9,7 @@ function Issues({ issues }) {
         return (
           <div key={key}>
             <Styled.DateLabel>{key}</Styled.DateLabel>
-            {value.map(props => {
+            {value.map((props) => {
               return <Issue key={props.id} {...props} />;
             })}
           </div>

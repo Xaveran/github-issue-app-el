@@ -3,7 +3,7 @@ import colors from '../../../utils/colors';
 import Icon from '../../common/icon/Icon';
 import { borderRadius } from '../layout/Layout.styled';
 
-const blur = radius => css`
+const blur = (radius) => css`
   -webkit-filter: blur(${radius});
   -moz-filter: blur(${radius});
   -o-filter: blur(${radius});
@@ -41,7 +41,7 @@ export const Filter = styled.div`
   width: 100%;
   height: 50px;
 
-  ${props =>
+  ${(props) =>
     props.active &&
     css`
       background-color: ${colors.ebonyClay};

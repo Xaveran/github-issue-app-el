@@ -4,7 +4,7 @@ import RobotoFont from '../../../assets/Roboto-Regular.ttf';
 export const GlobalStyle = createGlobalStyle`
   html,
   body,
-  #app {
+  #root {
     margin: 0;
     padding: 0;
     width: 100%;
